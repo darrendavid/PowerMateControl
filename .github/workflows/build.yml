@@ -28,7 +28,7 @@ jobs:
       - name: Build
         shell: cmd
         run: |
-          cl.exe /std:c++17 /EHsc /W3 /O2 ^
+          cl.exe /std:c++17 /EHsc /W3 /O2 /DUNICODE /D_UNICODE /D_CRT_SECURE_NO_WARNINGS ^
             src\main.cpp ^
             src\PowermateManager.cpp ^
             src\ProfileManager.cpp ^
