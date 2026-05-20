@@ -23,7 +23,7 @@ jobs:
       - name: Compile resources
         working-directory: src
         shell: cmd
-        run: rc.exe resource.rc /fo resource.res
+        run: rc.exe /fo resource.res resource.rc
 
       - name: Build
         shell: cmd
