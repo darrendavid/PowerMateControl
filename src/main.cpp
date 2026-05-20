@@ -1,4 +1,5 @@
 #include "PowermateManager.h"
+#include "ProfileManager.h"
 #include "trayIcon.h"
 #include <windows.h>
 #include <iostream>
@@ -40,6 +41,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR cmdLine, int) {
         CloseHandle(hMutex);
         return -1;
     }
+
+    ProfileManager::LoadProfile();
 
     if (PowermateManager::FindAndOpenDevice()) {
     PowermateManager::StartReading();

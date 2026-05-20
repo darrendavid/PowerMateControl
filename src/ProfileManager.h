@@ -10,7 +10,14 @@ public:
     static size_t GetCurrentProfileIndex();
     static std::wstring GetCurrentProfileName();
 
+    // Persist profile to / restore profile from registry
+    static void SaveProfile();
+    static void LoadProfile();
+
 private:
     // Static variable to store current profile index
     static size_t currentProfileIndex;
+
+    static constexpr const wchar_t* kRegKey   = L"Software\\PowerMateControl";
+    static constexpr const wchar_t* kRegValue = L"ActiveProfile";
 };

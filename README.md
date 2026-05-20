@@ -6,6 +6,8 @@
     Windows 11 tray application for the Griffin PowerMate USB device
     <br/>
     Control Windows volume or simulate mouse scroll action.
+    <br/>
+    Forked from <a href="https://github.com/magouill/PowerMateControl">https://github.com/magouill/PowerMateControl</a>. Now persists the user's selection (Volume/Scroll) across reboot, and sets Volume control as the default.
   </p>
 </p>
 
