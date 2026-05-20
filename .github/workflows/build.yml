@@ -35,7 +35,7 @@ jobs:
             src\TriggerAction.cpp ^
             src\trayIcon.cpp ^
             src\resource.res ^
-            /link setupapi.lib hid.lib shell32.lib ^
+            /link setupapi.lib hid.lib shell32.lib advapi32.lib ^
             /subsystem:windows ^
             /out:PowerMateControl.exe
 
